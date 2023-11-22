@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Snake Game</h1>
+    <canvas id="playGround" height="400" width="400"></canvas>
+    <div class="controls">
+      <button id="startButton" onclick="start()">Start</button>
+      <button id="pauseButton" onclick="pause()">Pause</button>
+      <button id="resetButton" onclick="reset()">Reset</button>
+    </div>
+    <div class="values">
+      <div>
+        <h3>Aktuelle Länge:</h3>
+        <h3 id="sizeAmount"></h3>
+        <h3>Beste Länge:</h3>
+        <h3 id="HighScore"></h3>
+      </div>
+      <div>
+        <h3>Aktuelle Zeit:</h3>
+        <h3 id="timeAmount"></h3>
+        <h3>Beste Zeit:</h3>
+        <h3 id="timeHighScore"></h3>
+      </div>
+
+    </div>
+  </div>
+  <script src="snake.js"></script>
+</body>
+
+</html>
